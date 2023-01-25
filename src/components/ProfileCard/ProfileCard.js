@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProfileCard = ({ title, handle }) => {
+const ProfileCard = ({ title, handle, description }) => {
     // const { title, handle } = props;
     return (
         <div className='card'>
@@ -14,6 +14,9 @@ const ProfileCard = ({ title, handle }) => {
                 <div className="media-content">
                     <p className='title is-4'>{title}</p>
                     <p className='subtitle is-6'>{handle}</p>
+                </div>
+                <div className="content">
+                    {description}
                 </div>
             </div>
         </div>
